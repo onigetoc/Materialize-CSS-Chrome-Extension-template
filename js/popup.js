@@ -24,7 +24,7 @@ chrome.tabs.query({
     console.log(tab.url);
     //alert(tab.url);
     //var newurl = nohttp(tab.url);
-    var curentBaseurl = nohttp(baseurl(tab.url))
+    var curentwebsite= tab.url;
 
 //var newurl = location.origin.replace(/.*?:\/\//g, "");
 //var newurl = location.origin.replace(/^https?\:\/\//i, "");
@@ -34,41 +34,34 @@ var urllist = [
     {"url":"http://scriptsmashup.com","service":"Wordpress Plugins"},
     {"url":"http://softplug.com","service":"VST synths"},
     {"url":"http://reveilletoi.com","service":"My blog"},
-    {"url":"http://allo.com","service":"WP mobile plugin"},
-    {"url":"http://reveilletoi.com","service":"Funny Videos"},
-    {"url":"http://reveilletoi.com","service":"Funny Videos"},
+    {"url":"http://allotoi.com","service":"Wordpress mobile plugin"},
+    {"url":"http://podzic.com","service":"Techno Music"},
+    {"url":"http://spiritualtv.org","service":"Spiritual Videos"},
+    {"url":"http://wpgit.org","service":"Wordpress plugins/themes search on Github"}
 
   //{"url":"https://www.whois.com/whois/%s","service":"pineapple"},
 ];
     
 
 
-var html = "";
+var html = '<a class="blue-text collection-item" href="' + curentwebsite + '" target="_blank">';
+  
+  html += '<img src="http://s2.googleusercontent.com/s2/favicons?domain=' + nohttp(baseurl(curentwebsite)) + '"/>';
+  html += nohttp(baseurl(curentwebsite)) + '<span class="new badge blue" data-badge-caption="Current Websiste NOW"><span><a/>';
+  
+  
 $.each(urllist, function(i, obj) {
   //alert(obj.tagName);
-  html += '<a class="blue-text collection-item" href="' + baseurl(obj.url) + '" target="_blank">';
+  html += '<a class="blue-text collection-item" href="' + obj.url + '" target="_blank">';
   html += '<img src="http://s2.googleusercontent.com/s2/favicons?domain=' + baseurl(obj.url) + '"/>';
-  html += obj.url + '<span class="new badge blue" data-badge-caption="' + obj.service + '"><span><a/>';
+  html += nohttp(baseurl(obj.url)) + '<span class="new badge blue" data-badge-caption="' + obj.service + '"><span><a/>';
 });
+  
 
 $("div.seolist").html(html);
     
     
 }); // chrome tab end
-
-//string interpolation in JavaScript 2
-//var customURL = 'http://www.browseo.net/?url=%s';  //demo
-//s = parse(customURL, newurl); // parse interpolation use
-
-/******** FUNCTION *********/
-function parse(url) {
-  var args = [].slice.call(arguments, 1),
-    i = 0;
-
-  return url.replace(/%s/g, function() {
-    return args[i++];
-  });
-}
 
 /************************/
 

@@ -5,6 +5,9 @@ div.seolist img {
     width: 16px;
     height: 16px
 }
+div.seolist {
+  text-transform: capitalize;
+}
 
 /* REWRITE MATERIAL */
 nav {
