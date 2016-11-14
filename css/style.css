@@ -1,0 +1,36 @@
+div.seolist img {
+    vertical-align: middle;
+    /*middle/sub*/
+    margin-right: 8px;
+    width: 16px;
+    height: 16px
+}
+
+/* REWRITE MATERIAL */
+nav {
+    height: 52px !important;
+    line-height: 52px !important;
+}
+nav .brand-logo {
+    font-size: 1.6rem;
+}
+.tabs .tab a {
+    color: #1565c0 !important;
+}
+.collection .collection-item {
+    padding: 6px 20px;
+}
+
+.noMargin, .noPadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.collection.noBorder {
+    border-top-color: #fff!important;
+    border-left-color: #fff!important;
+    border-right-color: #fff!important;
+}
+/* TAB COLOR */
+.tabs .indicator {
+    background-color: #2196f3;
+}

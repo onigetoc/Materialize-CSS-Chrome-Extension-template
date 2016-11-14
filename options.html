@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>My Test Extension Options</title>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/options.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<html>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">My Extension Options</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="http://materializecss.com/sass.html" target="_blank">Sass</a></li>
+        <li><a href="http://materializecss.com/badges.html" target="_blank">Components</a></li>
+        <li><a href="http://materializecss.com/collapsible.html" target="_blank">JavaScript</a></li>
+        <li><a href="#" target="_blank">Materialize Chrome extension on Github</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="row container-full">
+
+
+      <div class="input-field col s4">
+        <select id="color">
+<!--          <option value="" disabled >Choose your option</option>-->
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="yellow">yellow</option>
+        </select>
+        <label>Favorite color:</label>
+      </div>
+
+
+      <p>
+        <input type="checkbox" id="like" />
+        <label for="like">I like colors.</label>
+      </p>
+
+      <span id="status"></span>
+
+      <button id="save" class="btn waves-effect waves-light" type="submit" name="action">Save
+        <i class="material-icons right">send</i>
+      </button>
+
+
+
+      <p>
+        <input type="checkbox" id="test5" />
+        <label for="test5">Red</label>
+      </p>
+      <p>
+        <input type="checkbox" id="test6" checked="checked" />
+        <label for="test6">Yellow</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+        <label for="filled-in-box">Filled in</label>
+      </p>
+      <p>
+        <input type="checkbox" id="indeterminate-checkbox" />
+        <label for="indeterminate-checkbox">Indeterminate Style</label>
+      </p>
+      <p>
+        <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+        <label for="test7">Green</label>
+      </p>
+      <p>
+        <input type="checkbox" id="test8" disabled="disabled" />
+        <label for="test8">Brown</label>
+      </p>
+      
+
+
+  </div>
+
+
+  <script src="js/options.js"></script>
+
+</body>
+
+</html>
