@@ -1,8 +1,8 @@
 # Materialize CSS Chrome extension template
-Enjoy using the new MDL (Material Design Lite) library powered template for creating your own chrome extension!
+Materialize CSS Chrome extension template library powered template for creating your own chrome extension!
 
 ## About
-In this repository you can find a new fresh Chrome Extension KIT to create your own material design extension with integrated jQuery support!
+In this repository you can find a new fresh Chrome Extension KIT to create your own material design extension with Materialize CSS & integrated jQuery support!
 
 ## Installation
 Download ZIP, unzip and then go to <pre><code>chrome://extensions</code></pre> then switch the "Developer mode" on and then click on "load unpacked extension" and find your extension
@@ -12,7 +12,9 @@ Download ZIP, unzip and then go to "/demo" folder drag'n drop the package file (
 1. Go to manifest.json and change the properties (optional) options.html page & permission: : activeTab / storage
 2. Go to popup.html and popup.js to change markup and script
 3. (optional) change style in style.css
-4. (optional) change icons in "/img" folder
+4. (optional) change icons in "/img" folder  
+
+Icons are from :https://www.iconfinder.com
 
 ## Contributing
 1. Fork it!
