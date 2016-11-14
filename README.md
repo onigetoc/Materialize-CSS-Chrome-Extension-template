@@ -3,14 +3,15 @@ Materialize CSS Chrome extension template library powered template for creating 
 
 * * *
 
-Screenshot: popup.html
-![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/screenshot1.png)
-
-Screenshot: options.html
-![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/screenshot2.png)
-
 ## About
 In this repository you can find a new fresh Chrome Extension KIT to create your own material design extension with Materialize CSS & integrated jQuery support!
+
+#### About Screenshot: popup.html
+![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/screenshot1.png)
+
+#### Screenshot: options.html
+![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/screenshot2.png)
+
 
 ## Installation
 Download ZIP, unzip and then go to <pre><code>chrome://extensions</code></pre> then switch the "Developer mode" on and then click on "load unpacked extension" and find your extension
