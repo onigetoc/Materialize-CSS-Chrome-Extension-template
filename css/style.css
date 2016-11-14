@@ -9,7 +9,6 @@ div.seolist {
   text-transform: capitalize;
 }
 
-/* REWRITE MATERIAL */
 nav {
     height: 52px !important;
     line-height: 52px !important;
@@ -20,8 +19,11 @@ nav .brand-logo {
 .tabs .tab a {
     color: #1565c0 !important;
 }
+/* OVERWRITE COLLECTION &? MEDIA QUERIES */
 .collection .collection-item {
-    padding: 6px 20px;
+  padding: 8px 20px!important;
+  line-height: 1.2rem!important;
+  font-size: 15px !important;
 }
 
 .noMargin, .noPadding {
@@ -36,4 +38,8 @@ nav .brand-logo {
 /* TAB COLOR */
 .tabs .indicator {
     background-color: #2196f3;
+}
+
+html {
+    font-size: 16px !important;
 }
