@@ -23,7 +23,7 @@ Download ZIP, unzip and then go to "/demo" folder drag'n drop the package file (
 3. (optional) change style in style.css ( I did some custom css and some custom css to overwrite Materialize css )
 4. (optional) change icons in "/img" folder  
 
-Icons are from :https://www.iconfinder.com
+Icons are from: https://www.iconfinder.com
 
 ## Contributing
 1. Fork it!
