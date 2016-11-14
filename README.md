@@ -1,6 +1,5 @@
 # Materialize CSS Chrome extension template
-Materialize CSS Chrome extension template library powered template for creating your own chrome extension! 
-I was inspired by the Google Chromecast extension
+Materialize CSS Chrome extension template library powered template for creating your own chrome extension! I was inspired by the Google Chromecast extension
 
 * * *
 
@@ -21,7 +20,7 @@ Download ZIP, unzip and then go to "/demo" folder drag'n drop the package file (
 ## Usage
 1. Go to manifest.json and change the properties (optional) options.html page & permission: : activeTab / storage
 2. Go to popup.html and popup.js to change markup and script
-3. (optional) change style in style.css
+3. (optional) change style in style.css ( I did some custom css and some custom css to overwrite Materialize css )
 4. (optional) change icons in "/img" folder  
 
 Icons are from :https://www.iconfinder.com
