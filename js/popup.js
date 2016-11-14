@@ -92,7 +92,7 @@ function nohttp(url) {
 // MATERIALIZE CSS
 
   $(".dropdown-button").dropdown();
-    
+  $('ul.tabs').tabs();
     
 }); // Doc ready end
 
