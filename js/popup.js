@@ -37,7 +37,7 @@ var urllist = [
     {"url":"http://allotoi.com","service":"Wordpress mobile plugin"},
     {"url":"http://podzic.com","service":"Techno Music"},
     {"url":"http://spiritualtv.org","service":"Spiritual Videos"},
-    {"url":"http://wpgit.org","service":"Wordpress plugins/themes search on Github"}
+    {"url":"http://wpgit.org","service":"WP search on Github"}
 
   //{"url":"https://www.whois.com/whois/%s","service":"pineapple"},
 ];

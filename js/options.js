@@ -5,11 +5,11 @@ function save_options() {
   chrome.storage.sync.set({
     favoriteColor: color,
     likesColor: likesColor
-  }, function() {
+  }, function () {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
     status.textContent = 'Options saved.';
-    setTimeout(function() {
+    setTimeout(function () {
       status.textContent = '';
     }, 750);
   });
@@ -22,7 +22,7 @@ function restore_options() {
   chrome.storage.sync.get({
     favoriteColor: 'red',
     likesColor: true
-  }, function(items) {
+  }, function (items) {
     document.getElementById('color').value = items.favoriteColor;
     document.getElementById('like').checked = items.likesColor;
   });
@@ -32,6 +32,6 @@ document.getElementById('save').addEventListener('click', save_options);
 
 /* MATERIALIZE JS */
 
-$(document).ready(function() {
-    $('select').material_select();
-  });
+$(document).ready(function () {
+  $('select').material_select();
+});
