@@ -65,6 +65,7 @@ $("div.seolist").html(html);
 }); // chrome tab end
 
 /************************/
+}); // Doc ready end
 
 function baseurl(url) {
   var domain;
@@ -95,5 +96,4 @@ function nohttp(url) {
   $(".dropdown-button").dropdown();
   $('ul.tabs').tabs();
     
-}); // Doc ready end
 
