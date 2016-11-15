@@ -65,6 +65,11 @@ $("div.seolist").html(html);
 }); // chrome tab end
 
 /************************/
+// MATERIALIZE CSS
+
+  $(".dropdown-button").dropdown();
+  $('ul.tabs').tabs();
+  
 }); // Doc ready end
 
 function baseurl(url) {
@@ -91,9 +96,5 @@ function nohttp(url) {
   return url.replace(/.*?:\/\//g, "");
   //return url.replace((http|https):\/\)?;
 }
-// MATERIALIZE CSS
-
-  $(".dropdown-button").dropdown();
-  $('ul.tabs').tabs();
     
 
