@@ -1,3 +1,15 @@
+html {
+  font-size: 16px !important;
+  margin: 0 2px;
+}
+body {
+  overflow-x: hidden;
+}
+/* SCROLL SECTION */  
+.scroll {
+  overflow: auto;
+  max-height: 300px;
+}
 div.seolist img {
     vertical-align: middle;
     /*middle/sub*/
@@ -20,6 +32,14 @@ nav .brand-logo {
     color: #1565c0 !important;
 }
 /* OVERWRITE COLLECTION &? MEDIA QUERIES */
+
+.tabs .tab a {
+    color: #1565c0 !important;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active, .collection .collection-item:not(.active):hover {
+    background-color: rgba(21, 101, 192, .08) !important;
+}
+
 .collection .collection-item {
   padding: 8px 20px!important;
   line-height: 1.2rem!important;
