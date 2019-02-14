@@ -1,68 +1,61 @@
-// Saves options to chrome.storage
+//////////////////// JSONIFY PLUGIN SHOULD USE name="something" AND MAY BE value="somevalue" ////////////////////
 
-$("#optionform").submit(function (e) {
+// USE JSONIFY // https://jsfiddle.net/onigetoc/aapne9nv/  
+// https://github.com/kushalpandya/JSONify
+!function(i){i.fn.jsonify=function(t){var n=i.extend({stringify:!1},t),s={}
+return i.each(this.serializeArray(),function(){this.name in s?(s[this.name].push||(s[this.name]=[s[this.name]]),s[this.name].push(this.value||"")):s[this.name]=this.value||""}),n.stringify?JSON.stringify(s):s},i.fn.dejsonify=function(t){"string"==typeof t&&(t=JSON.parse(t)),i.each(this.find("*[name]"),function(){var n=i(this).attr("type"),s=t[i(this).attr("name")]
+"radio"===n||"checkbox"===n?i.isArray(s)?i(this).prop("checked",i.inArray(i(this).val(),s)>-1):i(this).prop("checked",i(this).val()===s):i(this).val(s)})}}(jQuery)
+///////////////////////////////////////////////////////////////////////////////
 
-  console.log($("#optionform").serialize());
+///////////////// LOAD LOCAL STORAGE ON LOAD AFTER JSONIFY PLUGIN ////////////////////
+if (localStorage.getItem("options") !== null) {
 
-  var $form = $("#optionform");
-  var data = getFormData($form);
+  var getOptions = JSON.parse(localStorage.getItem('options')) || [];
+  console.log(getOptions)
+  $("#optionform").dejsonify(getOptions);
 
-  console.log(data);
-
-  // LOCAL STORAGE
-  // localStorage.setItem(storageName, JSON.stringify(data));
-
-  return false;
-
-});
-
-// SERIALIZE TO JSON | 
-function getFormData($form) {
-  var unindexed_array = $form.serializeArray();
-  var indexed_array = {};
-
-  $.map(unindexed_array, function (n, i) {
-    indexed_array[n['name']] = n['value'];
-  });
-
-  return indexed_array;
 }
 
-///////////////////////////////////////////////////////////////////////
+//////////////////// SAVE OPTIONS TO chrome.storage or localStorage ////////////////////
 
-//function save_options() {
-//  var color = document.getElementById('color').value;
-//  var likesColor = document.getElementById('like').checked;
-//  chrome.storage.sync.set({
-//    favoriteColor: color,
-//    likesColor: likesColor
-//  }, function () {
-//    // Update status to let user know options were saved.
-//    var status = document.getElementById('status');
-//    status.textContent = 'Options saved.';
-//    setTimeout(function () {
-//      status.textContent = '';
-//    }, 750);
-//  });
-//}
-//
-//// Restores select box and checkbox state using the preferences
-//// stored in chrome.storage.
-//function restore_options() {
-//  // Use default value color = 'red' and likesColor = true.
-//  chrome.storage.sync.get({
-//    favoriteColor: 'red',
-//    likesColor: true
-//  }, function (items) {
-//    document.getElementById('color').value = items.favoriteColor;
-//    document.getElementById('like').checked = items.likesColor;
-//  });
-//}
-//document.addEventListener('DOMContentLoaded', restore_options);
-//document.getElementById('save').addEventListener('click', save_options);
-
-/* MATERIALIZE JS */
+//////////////////// JQUERY HANDLE FORM ////////////////////
 
 $(document).ready(function () {
-  $('select').material_select();
+
+  /* MATERIALIZE JS */
+  //$('select').material_select();
+  $('select').formSelect(); // materialize v1.0
+
+  ///////////////// AUTOSAVE ON CHANGE ////////////////////
+  // https://stackoverflow.com/a/11795226/211324
+  $('#optionform').on('change keyup paste', ':input', function (e) {
+    jsonify();
+  });
+
+
+  ///////////////// SAVE ON SUBMIT IF NEEDED BUT NOT REQUIRED ////////////////////
+  $("#optionform").submit(function (e) {
+    jsonify();
+    return false;
+  });
+
+  //////////////////// RESET FORM AND EMPTY LOCAL STORAGE BUT NOT REQUIRED ////////////////////
+  $('#reset').click(function () {
+    $("#optionform").dejsonify({});
+    localStorage.removeItem('options'); // OPTIONAL
+  });
+
 });
+
+//////////////////// SERIALIZE TO JSON ////////////////////
+function jsonify() {
+
+  var jsonify = $("#optionform").jsonify({
+    stringify: true
+  });
+
+  console.log("SAVED");
+  console.log(jsonify);
+  localStorage.setItem('options', JSON.stringify(jsonify));
+
+}
