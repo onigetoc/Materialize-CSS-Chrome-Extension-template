@@ -8,11 +8,11 @@ body {
 /* SCROLL SECTION */  
 .scroll {
   overflow: auto;
-  max-height: 300px;
+  max-height: 300px;  /* ENTER MAX-HEIGHT NEEDED */
 }
 
 .scroll::-webkit-scrollbar {
-  width: 7px;
+  width: 8px;
   height: 0;
 }
 
