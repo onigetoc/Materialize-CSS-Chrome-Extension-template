@@ -4,7 +4,7 @@
   "default_icon": "img/icon-48.png",
   "default_popup": "popup.html"
   },
-  // INJECT STYLE EN JS IN WEBPAGE
+  // INJECT STYLE AND JS IN WEBPAGE
   //"content_scripts": [ {
   //   "js": [ "js/jquery.min.js", "js/popup.js", "js/materialize.min.js" ],
   //   "css": [ "css/style.css" , "css/materialize.min.css"],
