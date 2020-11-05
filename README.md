@@ -32,8 +32,21 @@ Icons are from: https://www.iconfinder.com
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :)
 
-## Used librarys
+## Real Chrome Extension
 
+[Media Caster (Cast video)](https://chrome.google.com/webstore/detail/media-caster/hcfmokabcclamlmgmnejaooocknicfbb)  
+![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/media-caster-promo.jpg)
+
+Find videos on web sites and download or play them on Chromecast device.  
+Put videos in the favorites tab
+
+Find videos or live stream on any web pages and cast them on your TV or Google Nest Hub from your Chromecast devices.  
+Add videos or live stream to your Media Caster favorites tab. live tv streaming videos are automatically saved in the live TV tab. 
+
+**In Action**  
+![](https://github.com/onigetoc/Materialize-CSS-Chrome-Extension-template/raw/gh-pages/img/media-caster-screenshot-1.jpg)
+
+## Used librarys
 <a href="http://materializecss.com">MDL (Materialize CSS)</a><br>
 <a href="http://jquery.com">jQuery</a> <br>
 <a href="https://fonts.googleapis.com/icon?family=Material+Icons">Material Design Icons by Google</a>
