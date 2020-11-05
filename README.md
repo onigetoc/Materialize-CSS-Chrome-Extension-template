@@ -32,10 +32,9 @@ Icons are from: https://www.iconfinder.com
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :)
 
-## Real Chrome Extension
+## Real Google Chrome Extension (Media Caster Google Play - Chrome web store)
 
-[Media Caster (Cast video)](https://chrome.google.com/webstore/detail/media-caster/hcfmokabcclamlmgmnejaooocknicfbb)  
-![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/media-caster-promo.jpg)
+![](https://raw.githubusercontent.com/onigetoc/Materialize-CSS-Chrome-Extension-template/gh-pages/img/mediacast-32.png) [**Media Caster (Cast video)**](https://chrome.google.com/webstore/detail/media-caster/hcfmokabcclamlmgmnejaooocknicfbb)  
 
 Find videos on web sites and download or play them on Chromecast device.  
 Put videos in the favorites tab
